@@ -85,6 +85,7 @@ int main() {
         else{
             max_p = p_d;
         }
+        
         if(*p_a < *p_b &&  *p_a < *p_c && *p_a < *p_d){
             min_p = p_a;
         }
