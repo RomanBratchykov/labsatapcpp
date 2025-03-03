@@ -176,7 +176,13 @@ int main() {
                         for (int j = 0; j < columns; j++)
                             if ( *(*(matrix + i) + j) < 0)
                             {
-                                *(*(matrix + i) + j) = sqrt(*(*(matrix + i) + j) * *(*(matrix + i) + j));
+                                *(*(matrix + i) + j) = - *(*(matrix + i) + j);
+                                /* 
+                                    or another posible way:
+                                    if (*(*(matrix + i) + j) < 0){
+                                    *(*(matrix + i) + j) = sqrt(*(*(matrix + i) + j) * *(*(matrix + i) + j));                                    }
+                                
+                                */
                             }
                     }
                     std::cout << "matrix with absolute values: \n";
