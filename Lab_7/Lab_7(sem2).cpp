@@ -29,7 +29,7 @@ void fillArray(int arr[], int size)
         }
             break;
         default:
-            std::cout << "Invalid choise\n";
+            std::cout << "Invalid choise, make other\n";
             break;
     }
 }
