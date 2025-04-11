@@ -2,33 +2,35 @@
 #define HEADER_HPP
 #include <iostream>
 
-class Worker {
-    std::string surname;
-    std::string department;
-    int yearOfStart;
-    int salary;
-    int bonus;
+class Book {
+    std::string name;
+    std::string author;
+    int yearOfPublish;
+    int price;
+    int numberOfPages;
     public:
-    Worker();
-    Worker(std::string surname, std::string department, int yearOfStart, int salary);
+    Book();
+    Book(std::string name, std::string author, int yearOfPublish, int numberOfPages);
     void show();
     void fillInfo();
     void fillInfoRand();
-    void setSurname(std::string surname);
-    void setDepartment(std::string department);
-    void setYearOfStart(int yearOfStart);
-    void setSalary(int salary);
-    void setBonus(int bonus);
-    std::string getSurname();
-    std::string getDepartment();
-    int getYearOfStart();
-    int getSalary();
-    int getBonus();
-    double getBonus(int yearsOfWork);
-    ~Worker();
+    void setName(std::string name);
+    void setAuthor(std::string author);
+    void setYearOfPublish(int yearOfPublish);
+    void setNumberOfPages(int numberOfPages);
+    std::string getName();
+    std::string getAuthor();
+    int getYearOfPublish();
+    int getPrice();
+    int getNumberOfPages();
+    int getPrice(int numberOfPages);
+    ~Book();
 };
+double averageNumberOfPages(Book* books, int size);
 
-double averageYearsOfWork(Worker* workers, int size, int currentYear);
+int maxPrice(Book* books, int size);
 
-void orderByExpirience(Worker* workers, int size, int currentYear);
+int minPrice(Book* books, int size);
+
+void sortByPrice(Book* books, int size);
 #endif

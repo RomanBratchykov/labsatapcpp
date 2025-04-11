@@ -1,124 +1,138 @@
 #include "header.hpp"
 
 
-std::string surnames[10] = {"Smith", "Johnson", "Williams", "Jones", "Brown",
-    "Davis", "Miller", "Wilson", "Moore", "Taylor"};
-std::string departments[10] = {"HR", "IT", "Finance", "Marketing", "Sales",
-    "Operations", "Customer Service", "Legal", "Research", "Development"};
-Worker::Worker(std::string surname, std::string department, int yearOfStart, int salary) {
-    this->surname = surname;
-    this->department = department;
-    this->yearOfStart = yearOfStart;
-    this->salary = salary;
-    this->bonus = getBonus(2025 - yearOfStart);
+std::string bookNames[10] = {"Godfather", "Harry Potter", "Lord of the Rings", "War and Peace", "1984", "Brave New World", "Fahrenheit 451", "Dune", "Foundation", "The Hitchhiker's Guide to the Galaxy"};
+std::string authors[10] = {"J.K. Rowling", "J.R.R. Tolkien", "Mario Puzo", "George R.R. Martin", "Agatha Christie", "Stephen King", "Dan Brown", "Isaac Asimov", "Arthur C. Clarke", "Ray Bradbury"};
+Book::Book(std::string name, std::string author, int yearOfPublish, int numberOfPages) {
+    this->name = name;
+    this->author = author;
+    this->yearOfPublish = yearOfPublish;
+    this->numberOfPages = numberOfPages;
+    this->price = getPrice(numberOfPages);
 }
-Worker::~Worker() {
-    std::cout << "Destructor called for " << surname << "\n";
+Book::~Book() {
 }
-Worker::Worker(){
-    this->surname = "Shevchenko";
-    this->department = "IT";
-    this->yearOfStart = 2000;
-    this->salary = 1000;
-    this->bonus = 400;
+Book::Book(){
+    this->name = "Discrete Mathematics";
+    this->author = "Yatsko O.";
+    this->yearOfPublish = 2023;
+    this->numberOfPages = 300;
+    this->price = 295;
 }
 
-void Worker::show() {
+void Book::show() {
     std::cout << "--------------------------\n";
-    std::cout << "Surname: " << surname << "\n";
-    std::cout << "Department: " << department << "\n";
-    std::cout << "Year of start: " << yearOfStart << "\n";
-    std::cout << "Salary: " << salary << "\n";
-    std::cout << "Bonus: " << bonus << "\n";
+    std::cout << "Name of book: " << name << "\n";
+    std::cout << "Author: " <<  author << "\n";
+    std::cout << "Year of publish: " << yearOfPublish << "\n";
+    std::cout << "Number of Pages: " << numberOfPages << "\n";
+    std::cout << "price: " << getPrice(numberOfPages) << "\n";
 }
-void Worker::setSurname(std::string surname){
-    this->surname = surname;
+void Book::setName(std::string name){
+    this->name = name;
 }
 
-void Worker::fillInfo() {
-    std::string surname, department;
-    int yearOfStart, salary;
-    std::cout << "Enter surname:\n";
+void Book::fillInfo() {
+    std::string name, author;
+    int yearOfPublish, numberOfPages;
+    std::cout << "Enter name:\n";
     std::cin.ignore();
-    std::getline(std::cin, surname);
-    std::cout << "Enter department:\n";
-    std::getline(std::cin, department);
-    std::cout << "Enter year of start:\n";
-    std::cin >> yearOfStart;
-    std::cout << "Enter salary:\n";
-    std::cin >> salary;
-    this->surname = surname;
-    this->department = department;
-    this->yearOfStart = yearOfStart;
-    this->salary = salary;
-    this->bonus = getBonus(2025 - yearOfStart);
+    std::getline(std::cin, name);
+    std::cout << "Enter author:\n";
+    std::getline(std::cin, author);
+    std::cout << "Enter year of publish:\n";
+    std::cin >> yearOfPublish;
+    std::cout << "Enter numberOfPages:\n";
+    std::cin >> numberOfPages;
+    this->name = name;
+    this->author = author;
+    this->yearOfPublish = yearOfPublish;
+    this->numberOfPages = numberOfPages;
+    this->price = getPrice(numberOfPages);
 }
 
-void Worker::fillInfoRand() {
-    this->surname = surnames[rand() % 10];
-    this->department = departments[rand() % 10];
-    this->yearOfStart = rand() % 25 + 2000;
-    this->salary = rand() % 10000 + 1000;
-    this->bonus = getBonus(2025 - yearOfStart);
+void Book::fillInfoRand() {
+    this->name = bookNames[rand() % 10];
+    this->author = authors[rand() % 10];
+    this->yearOfPublish = rand() % 400 + 1625;
+    this->numberOfPages = rand() % 1000 + 50;
+    this->price = getPrice(numberOfPages);
 }
-void Worker::setDepartment(std::string department) {
-    this->department = department;
+void Book::setAuthor(std::string author) {
+    this->author = author;
 }
-void Worker::setYearOfStart(int yearOfStart) {
-    this->yearOfStart = yearOfStart;
+void Book::setYearOfPublish(int yearOfPublish) {
+    this->yearOfPublish = yearOfPublish;
 }
-void Worker::setSalary(int salary) {
-    this->salary = salary;
+void Book::setNumberOfPages(int numberOfPages) {
+    this->numberOfPages = numberOfPages;
 }
-void Worker::setBonus(int bonus) {
-    this->bonus = bonus;
+std::string Book::getName() {
+    return this->name;
 }
-std::string Worker::getSurname() {
-    return this->surname;
+std::string Book::getAuthor() {
+    return this->author;
 }
-std::string Worker::getDepartment() {
-    return this->department;
+int Book::getYearOfPublish() {
+    return this->yearOfPublish;
 }
-int Worker::getYearOfStart() {
-    return this->yearOfStart;
+int Book::getNumberOfPages() {
+    return this->numberOfPages;
 }
-int Worker::getSalary() {
-    return this->salary;
-}
-int Worker::getBonus() {
-    return this->bonus;
+int Book::getPrice() {
+    return this->price;
 }
 
 
-double Worker::getBonus(int yearsOfWork) {
-    if (yearsOfWork < 10) {
-        return getSalary() * 0.1;
+int Book::getPrice(int numberOfPages) {
+    if (numberOfPages < 100) {
+        return (getNumberOfPages() * 1) + 25;
     }
-    else if (yearsOfWork < 25 && yearsOfWork >= 10) {
-        return getSalary() * 0.2;
+    else if (numberOfPages > 300) {
+        return int((getNumberOfPages() * 0.8) + 25);
     }
     else {
-        return getSalary() * 0.4;
+        return int((getNumberOfPages() * 0.9) + 25);
     }
 }
 
-double averageYearsOfWork(Worker* workers, int size, int currentYear) {
-    if (size == 0) return 0.0;
-    double totalYears = 0.0;
+double averageNumberOfPages(Book* Books, int size){
+    double totalPages = 0.0;
     for (int i = 0; i < size; i++) {
-        totalYears += (currentYear - workers[i].getYearOfStart());
+        totalPages += Books[i].getNumberOfPages();
     }
-    return totalYears / size;
+    return totalPages / size;
 }
 
-void orderByExpirience(Worker* workers, int size, int currentYear){
-    for (int i = 0; i < size - 1; i++){
-        for (int j = 0; j < size - i - 1; j++){
-            if (workers[j].getYearOfStart() > workers[j + 1].getYearOfStart()){
-                Worker temp = workers[j];
-                workers[j] = workers[j + 1];
-                workers[j + 1] = temp;
+int maxPrice(Book* books, int size) {
+    int max = books[0].getPrice();
+    for (int i = 0; i < size - 1; i++) {
+        if (books[i].getPrice() < books[i + 1].getPrice()) {
+            max = books[i + 1].getPrice();
+        }
+    }
+    return max;
+}
+
+int minPrice(Book* books, int size) {
+    int min = books[0].getPrice();
+    for (int i = 0; i < size - 1; i++) {
+        if (books[i].getPrice() > books[i + 1].getPrice()) {
+            min = books[i + 1].getPrice();
+        }
+    }
+    return min;
+}
+
+void sortByPrice(Book* books, int size){
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (books[j].getPrice() > books[j + 1].getPrice()) {
+                Book temp = books[j];
+                books[j] = books[j + 1];
+                books[j + 1] = temp;
             }
         }
     }
+
 }
