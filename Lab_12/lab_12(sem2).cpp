@@ -291,32 +291,61 @@ int main(){
             break;
             case 4:
             {
-                std::wcout << L"Enter word to create: \n";
-                std::wstring wordToCreate;
-                std::wcin.ignore();
-                std::getline(std::wcin, wordToCreate);
-                wchar_t punctuation = 0;
-                cleanWord(wordToCreate, punctuation);
-                std::wifstream fileToRead("C:z1.txt");
+                std::wstring wordToFind = L"хто";
+                std::wifstream fileToRead("z1.txt");
                     if (!fileToRead.is_open()){
                          std::wcerr << L"Error opening file" << "\n";
                          return 1;
                     }
+
                 fileToRead.imbue(std::locale(fileToRead.getloc(), new std::codecvt_utf8<wchar_t>));
-                std::wifstream fileToRead2("z1.txt");
-                if (!fileToRead.is_open()){
+
+                std::wstring line;
+                std::wstring finalLine;
+                while (std::getline(fileToRead, line)){
+                    finalLine += line;
+                }
+
+                std::wstringstream ss(finalLine);
+                std::wstring word;
+                int counter = 0;
+                while (ss >> word){
+                    wchar_t char1 = 0;
+                    cleanWord(word, char1);
+                    if (wordToFind == word){
+                        counter++;
+                    }
+                }
+
+                if (counter <= 1){
+                    std::wcout << "Word is not exist or only one time\n";
+                    break;
+                }
+                std::wstringstream ss2(finalLine);
+                std::wstring word2;
+                bool isBetween = false;
+                std::wstring result;
+                while (ss2 >> word2){
+                    if (!isBetween){
+                        result += word2 + L" ";
+                    }
+                    if (word2 == wordToFind){
+                        isBetween = true;
+                        counter--;
+                    }
+                    if (counter == 0){
+                        isBetween = false;
+                    }
+                }
+                std::wcout << result << "\n";
+                std::wofstream fileToWrite("z3.txt", std::ios::app);
+                if (!fileToWrite.is_open()){
                      std::wcerr << L"Error opening file" << "\n";
                      return 1;
                 }
-
-                std::wofstream fileToWrite3("z3.txt", std::ios::app);
-                if (!fileToWrite3.is_open()){
-                     std::wcerr << L"Error opening file" << "\n";
-                     return 1;
-                }
-                fileToWrite3.imbue(std::locale(fileToWrite3.getloc(), new std::codecvt_utf8<wchar_t>));
-                fileToWrite3 << L"\n" << L"Слово: " << wordToCreate << "\n";
-
+                fileToWrite.imbue(std::locale(fileToWrite.getloc(), new std::codecvt_utf8<wchar_t>));
+                fileToWrite << L"\n Слово: " << wordToFind << L" ";
+                fileToWrite << result << L"\n";
             }
             break;
             case 5:
@@ -355,7 +384,7 @@ int main(){
                     count--;
                 }
                 s3 = s1 + s2;
-                std::wcout << s1 << "str1\n" << s2 << "str2\n" << s3 << "str3\n";
+                std::wcout << s3 << "str3\n";
                 std::wstringstream ss2(s3);
                 std::wstring word;
                 std::vector<std::wstring> wordsVector;
