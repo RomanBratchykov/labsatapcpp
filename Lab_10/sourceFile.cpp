@@ -43,8 +43,8 @@ void Book::show() {
     std::cout << "Publisher: " << publisher << "\n";
     std::cout << "City: " << city << "\n";
 }
-void Book::setName(std::string name){
-    this->name = name;
+    void Book::setName(std::string name){
+        this->name = name;
 }
 
 void Book::fillInfo() {

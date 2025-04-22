@@ -1,5 +1,8 @@
 {
     "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
         "array": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
@@ -54,6 +57,10 @@
         "sstream": "cpp",
         "fstream": "cpp",
         "cstring": "cpp",
-        "cstdarg": "cpp"
+        "cstdarg": "cpp",
+        "codecvt": "cpp",
+        "map": "cpp",
+        "list": "cpp",
+        "ratio": "cpp"
     }
 }
