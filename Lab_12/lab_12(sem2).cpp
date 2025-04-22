@@ -253,7 +253,6 @@ int main(){
                 std::wstring wordToSearch;
                 std::wcin.ignore();
                 std::getline(std::wcin, wordToSearch);
-                std::wcout << wordToSearch << "\n";
                 std::wcout << L"Lines containing the word: \n";
                 std::wcout << L"----------------------------------\n";
                 std::vector<int> indexes;
