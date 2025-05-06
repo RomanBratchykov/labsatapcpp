@@ -1,25 +1,22 @@
 #include <locale>
 #include <iostream>
 #include <clocale>
-
+#include <list>
 int main() {
-    std::setlocale(LC_ALL, "ukrainian");
-    std::wcout.imbue(std::locale());
-    std::wcout << L"System locale active.\n";
-
-    try {
-        std::locale ukLocale("uk-UA.UTF-8");
-        std::wcout << L"Locale uk-UA loaded successfully.\n";
-    } catch (const std::exception& e) {
-        std::cerr << "uk-UA failed: " << e.what() << std::endl;
+    srand(time(0));
+    std::list<int> vec;
+    int n, l;
+    std::cin >> n;
+    for (int i = 0; i < n; i++){
+        vec.push_back(rand() % 1000);
     }
-
-    try {
-        std::locale legacy("Ukrainian_Ukraine.1251");
-        std::wcout << L"Legacy locale loaded.\n";
-    } catch (const std::exception& e) {
-        std::cerr << "Legacy failed: " << e.what() << std::endl;
+    vec.sort();
+    std::cin >> l;
+    int start = 0, end = n, ind_x;
+    bool isFound = false;
+    while (!isFound){
+        ind_x = (end - start + 1) / 2;
+        if ()
     }
-
     return 0;
 }
