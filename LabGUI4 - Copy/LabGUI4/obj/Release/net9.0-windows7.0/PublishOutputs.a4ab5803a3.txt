@@ -1,0 +1,5 @@
+C:\Users\Roman\Downloads\LabGUI4.exe
+C:\Users\Roman\Downloads\LabGUI4.dll
+C:\Users\Roman\Downloads\LabGUI4.deps.json
+C:\Users\Roman\Downloads\LabGUI4.runtimeconfig.json
+C:\Users\Roman\Downloads\LabGUI4.pdb

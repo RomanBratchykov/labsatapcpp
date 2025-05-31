@@ -1,0 +1,48 @@
+﻿<Window x:Class="HomeworkGUI2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeworkGUI2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Add Device" Click="AddDevice_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Actions">
+                <MenuItem Header="_Charge Device" Click="ChargeDevice_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <Canvas Grid.Row="1" Height="30" Name="TextCanvas">
+            <TextBlock x:Name="ScrollingText" Text="Device Status Monitor" FontSize="16"/>
+        </Canvas>
+
+        <DataGrid Grid.Row="2" x:Name="DeviceGrid" AutoGenerateColumns="False" 
+                  SelectionChanged="DeviceGrid_SelectionChanged" Margin="5">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Type" Binding="{Binding Type}" Width="Auto"/>
+                <DataGridTextColumn Header="Battery Level" Binding="{Binding BatteryLevel}" Width="Auto"/>
+                <DataGridTextColumn Header="Power Saving Mode" Binding="{Binding Mode}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="5">
+            <TextBox x:Name="DeviceNameInput" Width="150" Margin="5"/>
+            <ComboBox x:Name="DeviceTypeInput" Width="100" Margin="5"/>
+            <Button Content="Add" Click="AddDevice_Click" Margin="5" IsDefault="True"/>
+            <ProgressBar x:Name="BatteryProgressBar" Width="200" Minimum="0" Maximum="100" Margin="5"/>
+            <Button x:Name="ExitButton" Width="93" Content="Exit&#xA;" Click="ExitButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

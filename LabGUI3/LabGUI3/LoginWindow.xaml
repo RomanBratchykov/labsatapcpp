@@ -1,0 +1,22 @@
+﻿<Window
+    x:Class="DoorsCalculator.LoginWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Авторизація"
+    Width="300"
+    Height="200">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label Content="Введіть пароль:" />
+            <PasswordBox
+                x:Name="PasswordBox"
+                Width="200"
+                Margin="5" />
+            <Button
+                Width="100"
+                Margin="5"
+                Click="LoginButton_Click"
+                Content="Увійти" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\cpp\\labsatapcpp\\LabGUI2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|d:\\cpp\\labsatapcpp\\labgui2\\labgui2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|solutionrelative:labgui2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|d:\\cpp\\labsatapcpp\\labgui2\\labgui2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|solutionrelative:labgui2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|d:\\cpp\\labsatapcpp\\labgui2\\labgui2\\areacontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|solutionrelative:labgui2\\areacontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|d:\\cpp\\labsatapcpp\\labgui2\\labgui2\\areacontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{08D2AE9E-27C6-4459-AEBF-61A796147E1B}|LabGUI2\\LabGUI2.csproj|solutionrelative:labgui2\\areacontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LabGUI2\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\MainWindow.xaml.cs",
+              "RelativeToolTip": "LabGUI2\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T12:44:23.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "LabGUI2\\MainWindow.xaml",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\MainWindow.xaml",
+              "RelativeToolTip": "LabGUI2\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-26T12:43:52.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AreaControl.xaml.cs",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\AreaControl.xaml.cs",
+              "RelativeDocumentMoniker": "LabGUI2\\AreaControl.xaml.cs",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\AreaControl.xaml.cs",
+              "RelativeToolTip": "LabGUI2\\AreaControl.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T12:36:35.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AreaControl.xaml",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\AreaControl.xaml",
+              "RelativeDocumentMoniker": "LabGUI2\\AreaControl.xaml",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\LabGUI2\\LabGUI2\\AreaControl.xaml",
+              "RelativeToolTip": "LabGUI2\\AreaControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-26T12:36:31.846Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

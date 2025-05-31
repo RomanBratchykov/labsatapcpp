@@ -1,0 +1,94 @@
+﻿<Window
+    x:Class="DoorsCalculator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Калькулятор дверей"
+    Width="600"
+    Height="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TabControl x:Name="TabControl" TabStripPlacement="{Binding TabPlacement}">
+            <TabItem Header="Міжкімнатні двері">
+                <StackPanel Margin="10">
+                    <Image x:Name="InteriorDoorImage" Height="100" />
+                    <Label Content="Ширина (м):" />
+                    <TextBox x:Name="InteriorWidth" Width="100" />
+                    <Label Content="Висота (м):" />
+                    <TextBox x:Name="InteriorHeight" Width="100" />
+                    <Label Content="Матеріал:" />
+                    <ComboBox x:Name="InteriorMaterial" SelectionChanged="Material_SelectionChanged">
+                        <ComboBoxItem Content="Метал" />
+                        <ComboBoxItem Content="Дерево" />
+                    </ComboBox>
+                    <Label Content="Фурнітура:" />
+                    <ComboBox x:Name="InteriorFittings">
+                        <ComboBoxItem Content="BLUM" />
+                        <ComboBoxItem Content="CHEZHKA" />
+                    </ComboBox>
+                    <Label Content="Кількість:" />
+                    <TextBox x:Name="InteriorQuantity" Width="100" />
+                    <CheckBox x:Name="InteriorDismantle" Content="Демонтаж ($20)" />
+                    <CheckBox x:Name="InteriorInstall" Content="Встановлення ($50)" />
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Вхідні двері">
+                <StackPanel Margin="10">
+                    <Image x:Name="EntranceDoorImage" Height="100" />
+                    <Label Content="Ширина (м):" />
+                    <TextBox x:Name="EntranceWidth" Width="100" />
+                    <Label Content="Висота (м):" />
+                    <TextBox x:Name="EntranceHeight" Width="100" />
+                    <Label Content="Матеріал:" />
+                    <ComboBox x:Name="EntranceMaterial" SelectionChanged="Material_SelectionChanged">
+                        <ComboBoxItem Content="Метал" />
+                        <ComboBoxItem Content="Дерево" />
+                    </ComboBox>
+                    <Label Content="Фурнітура:" />
+                    <ComboBox x:Name="EntranceFittings">
+                        <ComboBoxItem Content="BLUM" />
+                        <ComboBoxItem Content="CHEZHKA" />
+                    </ComboBox>
+                    <Label Content="Кількість:" />
+                    <TextBox x:Name="EntranceQuantity" Width="100" />
+                    <CheckBox x:Name="EntranceDismantle" Content="Демонтаж ($20)" />
+                    <CheckBox x:Name="EntranceInstall" Content="Встановлення ($50)" />
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        <StackPanel
+            Grid.Row="1"
+            Margin="10"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <ComboBox
+                x:Name="DiscountCombo"
+                Width="100"
+                Margin="5">
+                <ComboBoxItem Content="Без знижки" />
+                <ComboBoxItem Content="5%" />
+                <ComboBoxItem Content="10%" />
+            </ComboBox>
+            <ComboBox
+                x:Name="DeliveryCombo"
+                Width="100"
+                Margin="5">
+                <ComboBoxItem Content="Без доставки" />
+                <ComboBoxItem Content="Безкоштовна доставка" />
+                <ComboBoxItem Content="Платна доставка" />
+            </ComboBox>
+            <Button
+                Width="150"
+                Margin="5"
+                Click="CalculateButton_Click"
+                Content="Розрахувати вартість" />
+            <Button
+                Width="150"
+                Margin="5"
+                Click="SettingsButton_Click"
+                Content="Налаштування інтерфейсу" />
+        </StackPanel>
+    </Grid>
+</Window>

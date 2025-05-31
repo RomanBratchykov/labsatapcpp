@@ -1,0 +1,49 @@
+﻿<Window x:Class="LabGUI4.TaskCreationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabGUI4"
+        mc:Ignorable="d"
+        Title="TaskCreationWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+
+        <Label Content="Назва:" Grid.Row="1"/>
+        <TextBox x:Name="NameTextBox" Grid.Row="2" Margin="0,0,0,20"/>
+
+        <Label Content="Пріоритет:" Grid.Row="2" Margin="0,21,0,7" Grid.RowSpan="2"/>
+        <ComboBox x:Name="PriorityComboBox" Grid.Row="4" Margin="0,0,0,10">
+            <ComboBoxItem Content="Low"/>
+            <ComboBoxItem Content="Medium"/>
+            <ComboBoxItem Content="High"/>
+        </ComboBox>
+        <Label Content="Статус:" Grid.Row="5" Margin="0,0,0,256"/>
+        <ComboBox x:Name="StatusComboBox" Grid.Row="6" Margin="0,27,0,233" >
+            <ComboBoxItem Content="Pending"/>
+            <ComboBoxItem Content="InProgress"/>
+            <ComboBoxItem Content="Completed"/>
+        </ComboBox>
+        <Label Content="Дата початку (дд.мм):" Grid.Row="7" Margin="0,54,0,192"/>
+        <DatePicker x:Name="DatePickerStart" HorizontalAlignment="Left" Height="37" Margin="10,104,0,0" Grid.Row="8" VerticalAlignment="Top" Width="152"/>
+
+        <CheckBox x:Name="HasDeadlineCheckBox" Content="Завдання з дедлайном" Grid.Row="6" Checked="HasDeadlineCheckBox_Checked" Unchecked="HasDeadlineCheckBox_Unchecked" Margin="10,245,-10,-25"/>
+        <Label Content="Дедлайн (дд.мм):" x:Name="DeadlineLabel" Grid.Row="6" Margin="10,141,-10,109" Visibility="Collapsed" />
+        <DatePicker  x:Name="DatePickerDeadline" HorizontalAlignment="Left" Height="39" Margin="10,190,0,0" Grid.Row="6" VerticalAlignment="Top" Visibility="Collapsed" Width="152"/>
+
+        <StackPanel Grid.Row="11" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="OKButton"  Content="OK" Width="80" Margin="0,0,10,0" Grid.Row="11" Click="OKButton_Click" Height="35"/>
+            <Button x:Name="CancelButton"  Content="Скасувати" Width="80"  Grid.Row="12" Click="CancelButton_Click" Height="34"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="0,10,0,0" Grid.RowSpan="2" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"><Run Language="uk-ua" Text="Статус"/></TextBlock>
+    </Grid>
+</Window>

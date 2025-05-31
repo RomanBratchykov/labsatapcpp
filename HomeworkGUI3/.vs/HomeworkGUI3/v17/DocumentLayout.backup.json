@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|d:\\cpp\\labsatapcpp\\homeworkgui3\\homeworkgui3\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|solutionrelative:homeworkgui3\\settings.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|D:\\cpp\\labsatapcpp\\HomeworkGUI3\\homeworkgui3\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|solutionrelative:homeworkgui3\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|d:\\cpp\\labsatapcpp\\homeworkgui3\\homeworkgui3\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|solutionrelative:homeworkgui3\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|d:\\cpp\\labsatapcpp\\homeworkgui3\\homeworkgui3\\homeworkgui3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|solutionrelative:homeworkgui3\\homeworkgui3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|d:\\cpp\\labsatapcpp\\homeworkgui3\\homeworkgui3\\settings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{798E2FD1-FB00-4447-9DED-BF25D0467A8B}|HomeworkGUI3\\HomeworkGUI3.csproj|solutionrelative:homeworkgui3\\settings.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "HomeworkGUI3\\Properties\\Settings.settings",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\Properties\\Settings.settings",
+              "RelativeToolTip": "HomeworkGUI3\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-05-28T04:35:08.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeworkGUI3",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\HomeworkGUI3.csproj",
+              "RelativeDocumentMoniker": "HomeworkGUI3\\HomeworkGUI3.csproj",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\HomeworkGUI3.csproj",
+              "RelativeToolTip": "HomeworkGUI3\\HomeworkGUI3.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-28T04:34:47.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Settings.xaml.cs",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\Settings.xaml.cs",
+              "RelativeDocumentMoniker": "HomeworkGUI3\\Settings.xaml.cs",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\Settings.xaml.cs",
+              "RelativeToolTip": "HomeworkGUI3\\Settings.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:45:48.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Settings.xaml",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\Settings.xaml",
+              "RelativeDocumentMoniker": "HomeworkGUI3\\Settings.xaml",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\Settings.xaml",
+              "RelativeToolTip": "HomeworkGUI3\\Settings.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-27T19:17:44.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "HomeworkGUI3\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\cpp\\labsatapcpp\\HomeworkGUI3\\HomeworkGUI3\\MainWindow.xaml.cs",
+              "RelativeToolTip": "HomeworkGUI3\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T18:18:23.115Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

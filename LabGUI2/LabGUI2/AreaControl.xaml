@@ -1,0 +1,60 @@
+﻿<UserControl
+    x:Class="LabGUI2.AreaControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:LabGUI2"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="350"
+    d:DesignWidth="250"
+    mc:Ignorable="d">
+    <Grid>
+        <TextBlock
+            Width="134"
+            Margin="54,23,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Select unit from which"/>
+        <TextBlock
+            Width="142"
+            Margin="0,107,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Text="Select unit to what"/>
+        <ComboBox
+            Name="StartUnit"
+            Width="142"
+            Height="34"
+            Margin="0,55,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            SelectionChanged="StartUnit_SelectionChanged">
+            <ComboBoxItem Content="Hectar" />
+            <ComboBoxItem Content="Acre" />
+            <ComboBoxItem Content="Ar" />
+        </ComboBox>
+        <ComboBox
+            Name="Second"
+            Width="142"
+            Height="39"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Margin="0,136,0,0" />
+        <TextBox Name ="GetValue" HorizontalAlignment="Left" Margin="61,201,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock
+            Width="142"
+            Margin="0,180,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Text="Enter value"/>
+        <TextBox Name ="SetValue" HorizontalAlignment="Left" Margin="61,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBlock
+            Width="142"
+            Margin="50,224,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Result"/>
+        <Button Name ="GetRes" Content="Get result" HorizontalAlignment="Left" Height="27" Margin="61,282,0,0" VerticalAlignment="Top" Width="120" Click="GetRes_Click"/>
+        <Button Name ="BackButton" Content="Back" HorizontalAlignment="Left" Height="21" Margin="10,10,0,0" VerticalAlignment="Top" Width="39" Click="BackButton_Click"/>
+    </Grid>
+</UserControl>
